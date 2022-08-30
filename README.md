@@ -8,6 +8,8 @@ This project was made to collate some of the data structures that I had experime
     - Doubly Linked List
     - Singly Linked List
 - MinHeaps
+    - MinHeaps using Arrays
+    - MinHeaps using Node structures
 - Stacks & Queues
     - Queues
     - Stacks
