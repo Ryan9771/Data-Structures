@@ -1,18 +1,18 @@
 package StacksAndQueues;
 
 /**
- * Queues are first in first out, so essentially add each element to the end.
+ * Queue are first in first out, so essentially add each element to the end.
  *
  * <p>Enqueue: Inserts an item at the rear of the queue. Dequeue: Removes the object from the front
  * of the queue and returns it, thereby decrementing queue size by one.
  */
-public class Queues<E> {
+public class Queue<E> {
 
   private SQnode<E> first;
   private SQnode<E> last;
   private int size;
 
-  public Queues() {
+  public Queue() {
     this.first = null;
     this.last = null;
     this.size = 0;

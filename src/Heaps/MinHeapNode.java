@@ -1,4 +1,4 @@
-package MinHeaps;
+package Heaps;
 
 import java.util.ArrayList;
 import java.util.List;

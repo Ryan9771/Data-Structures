@@ -7,10 +7,12 @@ This project was made to collate some of the data structures that I had experime
     - Circular Linked List
     - Doubly Linked List
     - Singly Linked List
-- MinHeaps
-    - MinHeaps using Arrays
-    - MinHeaps using Node structures
+- Heaps
+    - MinHeaps (Array Based Method)
+    - MinHeaps (Nodes Based Method)
+    - MaxHeaps (Array Based Method)
 - Stacks & Queues
-    - Queues
+    - Priority Queue
+    - Queue
     - Stacks
 - Binary Search Trees

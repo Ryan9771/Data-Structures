@@ -1,0 +1,6 @@
+out
+.vscode
+.idea
+.DS_Store
+lib
+bin/

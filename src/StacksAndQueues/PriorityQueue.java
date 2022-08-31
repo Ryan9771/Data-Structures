@@ -1,9 +1,9 @@
-package MinHeaps;
+package StacksAndQueues;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MinHeap<E extends Comparable<E>> {
+public class PriorityQueue<E extends Comparable<E>> {
 
   // TODO: Constructor
 
@@ -12,11 +12,11 @@ public class MinHeap<E extends Comparable<E>> {
   private int nextIndex;
   private static final int MAX_SIZE = 100;
 
-  public MinHeap() {
+  public PriorityQueue() {
     this(MAX_SIZE);
   }
 
-  public MinHeap(int size) {
+  public PriorityQueue(int size) {
     this.nextIndex = 0;
     this.size = size;
     this.heap = (E[]) new Comparable[size];
@@ -137,19 +137,19 @@ public class MinHeap<E extends Comparable<E>> {
   }
 
   public static void main(String[] args) {
-    MinHeap<Integer> minHeap = new MinHeap<>();
-    minHeap.push(5);
-    minHeap.push(4);
-    minHeap.push(6);
-    minHeap.push(3);
-    System.out.println(minHeap.peek());
-    System.out.println(minHeap.contains(6));
-    System.out.println(minHeap.contains(7));
+    PriorityQueue<Integer> PriorityQueue = new PriorityQueue<>();
+    PriorityQueue.push(5);
+    PriorityQueue.push(4);
+    PriorityQueue.push(6);
+    PriorityQueue.push(3);
+    System.out.println(PriorityQueue.peek());
+    System.out.println(PriorityQueue.contains(6));
+    System.out.println(PriorityQueue.contains(7));
 
-    int s = minHeap.getSize();
+    int s = PriorityQueue.getSize();
     List<Integer> list = new ArrayList<>();
     for (int i = 0; i < s; i++) {
-      list.add(minHeap.poll());
+      list.add(PriorityQueue.poll());
     }
     System.out.println(list);
   }

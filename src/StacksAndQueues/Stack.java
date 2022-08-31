@@ -1,13 +1,13 @@
 package StacksAndQueues;
 
 /** Stacks are first in last out. So push elements further in as you add more elements. */
-public class Stacks<E> {
+public class Stack<E> {
 
   private SQnode<E> head;
   private SQnode<E> tail;
   private int size;
 
-  public Stacks() {
+  public Stack() {
     this.size = 0;
     this.head = null;
     this.tail = null;
