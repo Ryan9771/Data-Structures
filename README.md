@@ -2,7 +2,6 @@
 This project was made to collate some of the data structures that I had experimented with.
 
 ## Includes
-- AVL Trees
 - Linked Lists
     - Circular Linked List
     - Doubly Linked List
@@ -16,3 +15,5 @@ This project was made to collate some of the data structures that I had experime
     - Queue
     - Stacks
 - Binary Search Trees
+- AVL Trees
+- Red Black Trees
