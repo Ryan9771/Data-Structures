@@ -26,21 +26,50 @@ public class Deque<E extends Comparable<E>> {
         return this.size == 0;
     }
 
-
     // Adds an item to the front (left) of the deque
     public void addFront(E item) {
-        if (isEmpty()) {
-            DNode<E> newNode = new DNode<E>(head, item, tail);
-            head.next = newNode;
-            tail.prev = newNode;
-        } else {
-            DNode<E> newNode = new DNode<E>(head, item, head.next);
-            head.next.prev = newNode;
-            head.next = newNode;
-        }
+        DNode<E> newNode = new DNode<E>(head, item, head.next);
+        head.next.prev = newNode;
+        head.next = newNode;
         size++;
     }
 
+    // Adds an item to the back (right) of the deque
+    public void addBack(E item) {
+        DNode<E> newNode = new DNode<E>(tail.prev, item, tail);
+        tail.prev.next = newNode;
+        tail.prev = newNode;
+        size++;
+    }
+
+    // Removes an item from the front (left) of the deque
+    public E removeFront() {
+        if (!isEmpty()) {
+            DNode<E> resNode = head.next;
+            head.next.next.prev = head;
+            head.next = resNode.next;
+            size--;
+            return resNode.item;
+        }
+        return null;
+    }
+
+    // Removes an item from the back (right) of the deque
+    public E removeBack() {
+        if (!isEmpty()) {
+            DNode<E> resNode = tail.prev;
+            tail.prev.prev.next = tail;
+            tail.prev = resNode.prev;
+            size--;
+            return resNode.item;
+        }
+        return null;
+    }
+
+    // Returns the size of the deque
+    public int getSize() {
+        return size;
+    }
 
     @Override
     public String toString() {
@@ -56,28 +85,23 @@ public class Deque<E extends Comparable<E>> {
             this(null, item, null);
         }
 
-
         public DNode(DNode<E> prev, E item, DNode<E> next) {
             this.prev = prev;
             this.item = item;
             this.next = next;
         }
 
-
         public <T> String nullToString(T value) {
             return value == null ? "null" : value.toString();
         }
-
 
         @Override
         public String toString() {
             // We only print item and next to avoid infinite recursion
             return nullToString(item) + " | " + nullToString(next);
         }
-        
 
     }
-
 
     // MAIN
     public static void main(String[] args) {
@@ -85,7 +109,11 @@ public class Deque<E extends Comparable<E>> {
         deque.addFront(1);
         deque.addFront(2);
         deque.addFront(3);
+        deque.addBack(4);
+        deque.addBack(5);
+        System.out.println(deque.removeFront());
+        System.out.println(deque.removeBack());
         System.out.println(deque);
     }
-    
+
 }
