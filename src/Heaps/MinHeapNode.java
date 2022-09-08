@@ -54,6 +54,9 @@ public class MinHeapNode<E extends Comparable<E>> {
 
   // TODO: Swap
 
+  /**
+   * Swaps nodes of 2 indexes
+   */
   private void swap(int parent, int curr) {
     MinNode<E> currNode = find(curr);
     E temp = find(parent).item;
@@ -134,7 +137,7 @@ public class MinHeapNode<E extends Comparable<E>> {
   // TODO: Peek
 
   public E peek() {
-    return root.item;
+    return root == null ? null : root.item;
   }
 
   // TODO: Contains

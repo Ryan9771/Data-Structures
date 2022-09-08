@@ -10,6 +10,7 @@ This project was made to collate some of the data structures that I had experime
     - MinHeaps (Array Based Method)
     - MinHeaps (Nodes Based Method)
     - MaxHeaps (Array Based Method)
+    - MaxHeaps (Array Based Method)
 - Stacks & Queues
     - Deque
     - Priority Queue
