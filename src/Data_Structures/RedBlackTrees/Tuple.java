@@ -1,4 +1,4 @@
-package RedBlackTrees;
+package Data_Structures.RedBlackTrees;
 
 public class Tuple<X, Y> {
 

@@ -1,4 +1,4 @@
-package StacksAndQueues;
+package Data_Structures.StacksAndQueues;
 
 /**
  * Queue are first in first out, so essentially add each element to the end.

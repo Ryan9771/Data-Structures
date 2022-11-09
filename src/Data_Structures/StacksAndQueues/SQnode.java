@@ -1,4 +1,4 @@
-package StacksAndQueues;
+package Data_Structures.StacksAndQueues;
 
 public class SQnode<E> {
   private final E item;

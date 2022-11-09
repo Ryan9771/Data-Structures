@@ -1,4 +1,4 @@
-package StacksAndQueues;
+package Data_Structures.StacksAndQueues;
 
 import java.util.ArrayList;
 import java.util.List;

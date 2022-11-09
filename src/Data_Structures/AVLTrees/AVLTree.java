@@ -1,4 +1,4 @@
-package AVLTrees;
+package Data_Structures.AVLTrees;
 
 import java.util.ArrayList;
 import java.util.List;

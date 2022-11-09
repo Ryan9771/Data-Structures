@@ -1,4 +1,4 @@
-package LinkedList;
+package Data_Structures.LinkedList;
 
 public class Pair<E, V> {
 

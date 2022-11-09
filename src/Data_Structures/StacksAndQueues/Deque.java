@@ -1,4 +1,4 @@
-package StacksAndQueues;
+package Data_Structures.StacksAndQueues;
 
 // Deque
 // [ First item | .. | .. | ... | .. | .. | Last item ]

@@ -1,4 +1,4 @@
-package RedBlackTrees;
+package Data_Structures.RedBlackTrees;
 
 public final class Node<K extends Comparable<? super K>, V> {
 

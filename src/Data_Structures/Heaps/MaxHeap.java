@@ -1,4 +1,4 @@
-package Heaps;
+package Data_Structures.Heaps;
 
 public class MaxHeap<E extends Comparable<E>> {
     

@@ -1,4 +1,4 @@
-package RedBlackTrees;
+package Data_Structures.RedBlackTrees;
 
 import java.io.File;
 import java.io.FileNotFoundException;

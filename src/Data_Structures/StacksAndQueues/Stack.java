@@ -1,4 +1,4 @@
-package StacksAndQueues;
+package Data_Structures.StacksAndQueues;
 
 /** Stacks are first in last out. So push elements further in as you add more elements. */
 public class Stack<E> {

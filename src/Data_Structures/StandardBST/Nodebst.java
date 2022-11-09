@@ -1,4 +1,4 @@
-package StandardBST;
+package Data_Structures.StandardBST;
 
 public class Nodebst<E extends Comparable<E>> {
   protected E item;

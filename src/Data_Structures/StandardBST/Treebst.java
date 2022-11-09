@@ -1,4 +1,4 @@
-package StandardBST;
+package Data_Structures.StandardBST;
 
 import java.util.ArrayList;
 import java.util.List;
