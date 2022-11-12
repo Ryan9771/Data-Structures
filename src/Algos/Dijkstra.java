@@ -75,30 +75,6 @@ public class Dijkstra {
         return max;
     }
 
-
-    public class Edge {
-
-        private int weight; 
-        private int to;
-
-        public Edge(int weight, int to) {
-            this.weight = weight;
-            this.to = to;
-        }
-
-        public int compare(Edge e1) {
-            if (this.weight == e1.weight) {
-                return 0;
-            }
-
-            if (this.weight > e1.weight) {
-                return 1;
-            }
-
-            return -1; 
-        }
-    }
-
     public class Pair implements Comparable {
 
         private int weight;
