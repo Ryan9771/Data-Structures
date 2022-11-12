@@ -20,8 +20,10 @@ public class BFS {
 
         // Stores the nodes in FIFO
         LinkedList<Integer> queue = new LinkedList<>();
+        // Add the start node to the list
         queue.add(startNode);
 
+        // Polls from the queue and adds each neighbour to the queue
         while (!queue.isEmpty()) {
             int currNode = queue.poll();
             visited[currNode] = true;
