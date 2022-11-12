@@ -1,6 +1,7 @@
 package Algos;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 // Time Complexity: O(n)
@@ -35,6 +36,19 @@ public class DFS {
                 dfsHelper(graph, visited, node, res);
             }
         }
+    }
+
+    public static void main(String[] args) {
+        DFS dfs = new DFS();
+
+        List<List<Integer>> graph = Arrays.asList(
+            Arrays.asList(1,2),
+            Arrays.asList(2),
+            Arrays.asList(0,3),
+            Arrays.asList(3)
+        );
+
+        System.out.println(dfs.dfs(graph, 2, 4));
     }
     
 }
