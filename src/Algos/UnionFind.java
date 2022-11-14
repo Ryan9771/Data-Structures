@@ -8,7 +8,7 @@ import java.util.List;
 // Purpose: Finds the number of connected components in a graph
 public class UnionFind {
 
-    public UnionFind(){}
+    public UnionFind() {}
 
     // Returns the number of components found.
     // @param edges is a list of a pair of nodes representing an edge
